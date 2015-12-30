@@ -1,0 +1,23 @@
+设计模式
+1.单例
+2.工厂
+	2.1静态工厂
+	简单工厂
+	工厂方法
+	抽象工厂
+3.策略
+4.观察者
+	java.util.Observable;
+	java.util.Observer;
+5.装饰
+	FileInputStream;
+	BufferedInputStream;
+	LineNumberInputStream;
+6.命令
+	
+7.模板方法
+8.适配器
+9.组合
+10.迭代器
+11.状态
+12.代理
