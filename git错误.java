@@ -107,3 +107,51 @@ invalid upstream Ia57270f71d72a7516a8f9d6fefb2d364199ad5e6
 未解决
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+V@V-PC /E/workspace/ClientAPI (master)
+$ git push origin master:refs/for/master
+Counting objects: 1, done.
+Writing objects: 100% (1/1), 255 bytes | 0 bytes/s, done.
+Total 1 (delta 0), reused 0 (delta 0)
+error: unpack failed: error Missing tree ad6e2bf901e97cdd851775128962c83fd988bc09
+fatal: Unpack error, check server log
+To ssh://liuyl@git.kaolafm.com:29418/auto/clientapi
+ ! [remote rejected] master -> refs/for/master (n/a (unpacker error))
+error: failed to push some refs to 'ssh://liuyl@git.kaolafm.com:29418/auto/clientapi'
+===================================================================================================
+
+V@V-PC /E/workspace/ClientAPI (master)
+$ git push --no-thin origin HEAD:refs/for/master
+Counting objects: 11, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (11/11), 3.87 KiB | 0 bytes/s, done.
+Total 11 (delta 0), reused 0 (delta 0)
+remote: Processing changes: updated: 1, refs: 1, done
+remote: (W) ec2c4a7: no files changed, message updated
+remote:
+remote: Updated Changes:
+remote:   http://git.kaolafm.com/9468
+remote:
+To ssh://liuyl@git.kaolafm.com:29418/auto/clientapi
+ * [new branch]      HEAD -> refs/for/master
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+V@V-PC /e/workspace/edog (b_search)
+$ git push origin b_search:refs/for/master
+Counting objects: 113, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (38/38), done.
+Writing objects: 100% (43/43), 21.20 KiB | 0 bytes/s, done.
+Total 43 (delta 28), reused 0 (delta 0)
+remote: Resolving deltas: 100% (28/28)
+remote: Processing changes: refs: 1, done
+To ssh://liuyl@git.kaolafm.com:29418/edog_car
+ ! [remote rejected] b_search -> refs/for/master (change 9404 closed)
+error: failed to push some refs to 'ssh://liuyl@git.kaolafm.com:29418/edog_car'
+===================================================================================================
+1.git rebase -i HEAD~3
+修改3个提交pick为edit
+2.git  git commit --amend
+删除原来的change-id:xxxxxxxx
+3.git rebase --continue
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

@@ -74,4 +74,5 @@ git cherry-pick <commit id>
 (use "git cherry-pick --abort" to cancel the cherry-pick operation)
 
 
-
+11.绑定本地分支和远程分支
+git branch --set-upstream-to=origin/<branch> master1210

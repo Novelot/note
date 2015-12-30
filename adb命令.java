@@ -31,3 +31,17 @@ pm 查看
 2 sdcard
 
 pm set-install-location 2 
+
+
+7.
+==================================
+adb shell
+su
+mount -o remount,rw -t yaffs2 /dev/block/mtdblock0 /system
+adb shell mount -o remount,rw -t yaffs2 /dev/block/mtdblock0 /system
+chmod 777 /system/app/
+------
+在另一个console中
+adb push xx.apk /system/app/
+
+==================================
