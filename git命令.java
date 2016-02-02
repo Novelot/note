@@ -76,3 +76,10 @@ git cherry-pick <commit id>
 
 11.绑定本地分支和远程分支
 git branch --set-upstream-to=origin/<branch> master1210
+
+12.取消已提交到gerrit上的提交后,修改changedId
+1.git rebase -i HEAD~3
+修改3个提交pick为edit
+2.git  git commit --amend
+删除原来的change-id:xxxxxxxx
+3.git rebase --continue
