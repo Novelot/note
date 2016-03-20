@@ -6,3 +6,4 @@
 3. android:installLocation=["atuo"|"internalOnly"|"preferExternal"]  
   
 # 方法  
+
