@@ -1,5 +1,21 @@
 # Android中的设计模式
 1. 单例
+```
+public final class InputMethodManager {
+
+static InputMethodManager sInstance;
+
+public static InputMethodManager getInstance() {
+ synchronized (InputMethodManager.class) {
+	 if (sInstance == null) {
+		 IBinder b = ServiceManager.getService(Context.INPUT_METHOD_SERVICE);
+		 IInputMethodManager service = IInputMethodManager.Stub.asInterface(b);
+		 sInstance = new InputMethodManager(service, Looper.getMainLooper());
+	 }
+	 return sInstance;
+ }
+}
+```
 2. 工厂 
 
 	2.1 静态工厂 
