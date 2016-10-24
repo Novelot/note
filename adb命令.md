@@ -1,6 +1,7 @@
-# ADB 命令 #
-
->参考:http://www.2cto.com/kf/201502/376365.html
+ADB 命令
+=
+#### 参考
+>http://www.2cto.com/kf/201502/376365.html
 
 ### 1. 打开Activity  
 

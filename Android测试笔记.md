@@ -1,13 +1,13 @@
-# Android测试笔记 #
-
-## 使用方法 ##  
+Android测试笔记
+=
+## 使用方法  
 1. 继承AndroidTestCase
 2. 配置指令集:instrumentation在manifest节点下
 3. 配置函数库:uses-library在Application节点下
 4. assertEquals  
 
 
-## 相关类 ##
+## 相关类
 ```
 Object
 	junit.framework.Assert:断言类,提供assertXXX()和failXXX()方法;
@@ -27,7 +27,7 @@ Object
 					ActivityUnitTestCase
 					ActivityInstrumentationTestCase2
 ```
-## 几个重要的类 ##  
+## 几个重要的类  
 ## TestCase:无抽象方法的抽象类  
 ```
 setUp() 
@@ -87,7 +87,7 @@ getActivity():对父类中的成员变量mActivity进行了强转;如有必要�
 setActivityIntent():  
 ```
 
-## AndroidTestCase ##
+## AndroidTestCase
 #### 内部成员: 
 ``` 
 Context 上下文
@@ -105,7 +105,7 @@ getContext():获取上下文;
 assertXXXRequiresPermission():断言是否拥有某种系统权限;  
 scrubClass():刷除类,将类中的成员变量清为null,利用反射;  
 ```
-## JUnit测试框架(j2se) ##
+## JUnit测试框架(j2se)
 ```
 @Test注解
 	被测类必须:public

@@ -1,9 +1,9 @@
 Android注解学习笔记
 =
-
->### 参考:  
+### 参考  
 >http://anupcowkur.com/posts/a-look-at-android-support-annotations/
 
+### 引用  
 `compile 'com.android.support:support-annotations:20.0.0'`
 
 # Nullness注解
