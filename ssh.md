@@ -1,8 +1,9 @@
-# SSH配置遇到的问题 #  
+SSH配置遇到的问题
+=
 
 问题  
 ```
-$ ssh -p 29418 liuyl@git.kaolafm.com
+$ ssh -p 29418 liuyl@git.novelot.com
 Unable to negotiate with 192.168.4.28: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1
 ```
 
@@ -14,5 +15,5 @@ Host *
 ```  
 再次输入：  
 ```
-ssh -p 29418 liuyl@git.kaolafm.com
+ssh -p 29418 liuyl@git.novelot.com
 ```
