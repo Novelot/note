@@ -11,7 +11,9 @@ character_set_server=utf8
 init_connect='SET NAMES utf8'
 ```
 ##### 4. 启动服务: 
-`service mysql start`
+`service mysql start`  
+或  
+`/etc/init.d/mysqld start`
 
 ## 查看数据库编码格式
 `show create database <database_name>`
