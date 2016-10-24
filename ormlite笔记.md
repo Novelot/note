@@ -1,5 +1,5 @@
-# ormlite笔记 #  
-
+ormlite笔记   
+=
 # 注解  
 ## @DatabaseTable 表注解  
 1. tableName 表名
