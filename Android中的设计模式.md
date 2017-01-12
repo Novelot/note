@@ -44,4 +44,19 @@ public static InputMethodManager getInstance() {
 # 10. 迭代器
 # 11. 状态
 # 12. 代理 
+* 和装饰模式的差别
 # 13. ioc(控制反转、依赖注入)
+# 14. 访问者
+	注解butterknife
+
+
+
+
+
+
+
+
+
+
+
+

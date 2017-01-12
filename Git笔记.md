@@ -9,4 +9,7 @@ git diff  比较尚未暂存的文件更新了哪些部分
 git diff --cached  查看已经暂存的文件和上次提交的快照的差异  
 git diff --staged  
 ```  
-
+### 2. 命令行显示log
+```
+git log --graph --decorate --all
+```
