@@ -1,0 +1,1 @@
+monkey -p com.txznet.music -c android.intent.category.LAUNCHER -s 1000 --hprof --ignore-crashes --ignore-timeouts --ignore-security-exceptions --monitor-native-crashes --throttle 300 -v -v 20000000>/mnt/sdcard/monkey_diantaizhijia.txt & logcat -v time >>/mnt/sdcard/logcat_diantaizhijia.txt &
