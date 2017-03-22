@@ -4,6 +4,7 @@
 
 
 ## 2. java.lang.SecurityException: Missing permission to control media.
+> 设置里打开高级权限
 
 
 
