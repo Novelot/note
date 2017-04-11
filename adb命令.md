@@ -66,3 +66,5 @@ pm 查看
 
 `pm set-install-location 2 `  
 
+### 7. 查看设备信息
+`adb shell getprop > log`
